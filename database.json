@@ -1,0 +1,20 @@
+{
+  "development":{
+    "host":"localhost",
+    "port":"27017",
+    "database":"mongo",
+    "adapter":"monk",
+    "db_name":"big_data_development",
+    "username":"",
+    "password":""
+  },
+  "test":{
+    "host":"localhost",
+    "port":"27017",
+    "database":"mongo",
+    "adapter":"monk",
+    "db_name":"big_data_test",
+    "username":"",
+    "password":""
+  },
+}
