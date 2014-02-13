@@ -1,5 +1,5 @@
 {
-  "name": "application-name",
+  "name": "BigData-BigThings",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -8,6 +8,8 @@
   "dependencies": {
     "express": "3.4.8",
     "jade": "*",
-		"mocha": "*"
+    "mocha": "*",
+    "mongodb":"*",
+    "monk":"*"
   }
 }
