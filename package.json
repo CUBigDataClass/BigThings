@@ -10,6 +10,7 @@
     "jade": "*",
     "mocha": "*",
     "mongodb":"*",
-    "monk":"*"
+    "monk":"*",
+		"mongoose":"*"
   }
 }
