@@ -1,3 +1,6 @@
+var mongoose = require("mongoose");
+var db = require('./db.js')
+
 var userSchema = new mongoose.Schema({
 	name: {
 		first: String,
@@ -5,3 +8,4 @@ var userSchema = new mongoose.Schema({
 	},
 	age: { type: Number, min: 0}
 });
+

@@ -1,6 +1,3 @@
-// Requirements
-var file_system = require('fs');
-
 /**
  * Module dependencies.
  */
@@ -26,40 +23,22 @@ app.use(express.static(path.join(__dirname, 'public')));
 // **************
 
 
-
 // development only
 if ('development' == app.get('env')) {
   app.use(express.errorHandler());
 }
 // **************
 
-
-
-// Database config
-file_system.readFile("database.json", "utf-8", function(err, data){
-  if(err){
-    console.log("Error reading database configuration; " + err.toString() );
-    throw new Error("Error could not read database.json");
-  } else{
-    data = JSON.parse(data);
-    var db_config = data[app.settings.env];
-    console.log(db_config,toString());
-    var mongo = require( db_config["db_name"] );
-    var monk = require( db_config["adapter"] );
-    var db_url = db_config["host"] + ':' + db_config["port"] + '/' + db_config['db_name']
-    var db = adapter(db_url);
-  }
-});
-
-// **************
-
-
-
 // Routing
 app.get('/', routes.index);
 app.get('/users', user.list);
 // **************
 
+// Require models and controllers
+require('./models/index.js');
+require('./controllers/index.js');
+console.log("done");
+// **************
 
 
 // Start server
