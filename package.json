@@ -1,10 +1,10 @@
 {
-  "name": "node-express-mongoose",
-  "description": "A boilerplate application for express mongoose",
-  "version": "0.0.1",
+  "name": "Big Data Class Project",
+  "description": "We are doing big data",
+  "version": "0.0.2",
   "author": {
-    "name": "Madhusudhan Srinivasa",
-    "email": "me@madhums.me"
+    "name": "Nick Isaacs",
+    "email": "nicholas.isaacs@colorado.edu"
   },
   "engines": {
     "node": "0.10.x",
