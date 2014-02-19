@@ -1,5 +1,4 @@
 var mongoose = require("mongoose");
-require("../app.js");
 var file_system = require("fs");
 mongoose.connect('mongodb://localhost/mydb');
 
