@@ -34,6 +34,11 @@ fs.readdirSync(__dirname + '/app/models').forEach(function (file) {
   if (~file.indexOf('.js')) require(__dirname + '/app/models/' + file)
 })
 
+// Bootstrap models
+fs.readdirSync(__dirname + '/config/initializers').forEach(function (file) {
+  if (~file.indexOf('.js')) require(__dirname + '/config/initializers' + file)
+})
+
 // Bootstrap passport config
 require('./config/passport')(passport, config)
 
