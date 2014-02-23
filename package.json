@@ -17,7 +17,7 @@
   "dependencies": {
     "express": "latest",
     "express-namespace": "latest",
-    "mongoose": "latest",
+    "mongoose": "3.8.7",
     "mongoose-user": "latest",
     "passport": "latest",
     "passport-local": "latest",
@@ -27,7 +27,8 @@
     "view-helpers": "latest",
     "jade": "latest",
     "async": "latest",
-    "forever": "latest"
+    "forever": "latest",
+    "twitter": "0.2.6"
   },
   "devDependencies": {
     "nodemon": "latest",
