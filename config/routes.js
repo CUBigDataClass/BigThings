@@ -11,6 +11,7 @@ var passportOptions = {
 
 // controllers
 var home = require('../app/controllers/home')
+var twitter = require('../app/controllers/twitter')
 
 /**
  * Expose
@@ -19,5 +20,8 @@ var home = require('../app/controllers/home')
 module.exports = function (app, passport) {
 
   app.get('/', home.index)
+  
+  
+  app.get('/twitter/sample', twitter.sample)
 
 }
