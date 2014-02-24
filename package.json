@@ -28,7 +28,7 @@
     "jade": "latest",
     "async": "latest",
     "forever": "latest",
-    "twitter": "0.2.6"
+    "twitter": "latest"
   },
   "devDependencies": {
     "nodemon": "latest",
